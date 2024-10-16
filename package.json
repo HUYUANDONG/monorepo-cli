@@ -97,6 +97,6 @@
     "vue-tsc": "^2.0.29"
   },
   "keywords": ["monorepo","vue"],
-  "author": "",
+  "author": "huyuandong",
   "license": "ISC"
 }
