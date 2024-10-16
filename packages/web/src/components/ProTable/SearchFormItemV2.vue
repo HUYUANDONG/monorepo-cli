@@ -61,10 +61,9 @@ const elementTypeMap = {
   "el-time-select": ElTimeSelect,
   "el-option": ElOption,
 };
-type elementType = keyof typeof elementTypeMap;
 const is = computed(() => {
   // 默认 input 控件
-  return (type: elementType) => {
+  return (type: keyof typeof elementTypeMap) => {
     return elementTypeMap[type];
   };
 });
