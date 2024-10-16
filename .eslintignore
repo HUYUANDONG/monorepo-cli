@@ -1,0 +1,14 @@
+dist
+node_modules
+.husky
+.vscode
+.idea
+*.sh
+*.md
+packages/**/src/assets
+packages/**/node_modules
+packages/**/dist
+packages/**/*.md
+.eslintrc.cjs
+.prettierrc.cjs
+.stylelintrc.cjs

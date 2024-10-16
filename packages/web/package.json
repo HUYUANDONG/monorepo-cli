@@ -1,0 +1,47 @@
+{
+  "name": "@vue-monorepo-cli/web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit & vite build",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "lint:eslint": "eslint  --fix --ext .ts,.js,.vue ./src ",
+    "lint:prettier": "prettier --write \"**/*.{js,cjs,ts,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint  \"**/*.{css,scss,vue}\" --fix",
+    "lint:lint-staged": "lint-staged",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "5.1.10",
+    "codemirror": "^5.65.17",
+    "codemirror-editor-vue3": "^2.7.0",
+    "color": "^4.2.3",
+    "echarts": "^5.5.1",
+    "element-plus": "^2.8.0",
+    "exceljs": "^4.4.0",
+    "nprogress": "^0.2.0",
+    "qs": "^6.13.0",
+    "sortablejs": "^1.15.2"
+
+  },
+  "devDependencies": {
+    "@types/codemirror": "^5.60.15",
+    "@types/color": "^3.0.6",
+    "@types/nprogress": "^0.2.3",
+    "@types/sortablejs": "^1.15.8",
+    "unocss": "^0.58.9"
+
+  },
+  "repository": "https://github.com/HUYUANDONG/vue-monorepo-cli.git",
+  "author": "huyuandong",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

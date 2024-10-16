@@ -1,0 +1,17 @@
+dist
+node_modules
+public
+.husky
+.vscode
+.idea
+*.sh
+*.md
+
+src/assets
+stats.html
+
+packages/**/src/assets
+packages/**/node_modules
+packages/**/dist
+packages/**/*.md
+packages/**/public
