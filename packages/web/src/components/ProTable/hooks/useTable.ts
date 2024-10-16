@@ -1,6 +1,30 @@
-import { Table } from "./type";
 import { reactive, computed, toRefs } from "vue";
-
+namespace Table {
+  export interface Pageable {
+    pageNum?: number;
+    pageNow?: number;
+    pageSize?: number;
+    page: number;
+    limit: number;
+    total: number;
+  }
+  export interface StateProps {
+    tableData: any[];
+    pageable: Pageable;
+    searchParam: {
+      [key: string]: any;
+    };
+    searchInitParam: {
+      [key: string]: any;
+    };
+    totalParam: {
+      [key: string]: any;
+    };
+    icon?: {
+      [key: string]: any;
+    };
+  }
+}
 /**
  * @description table 页面操作方法封装
  * @param {Function} api 获取表格数据 api 方法 (必传)
